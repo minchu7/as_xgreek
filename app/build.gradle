@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            storeFile file('c:/android/workspace/HymnViewer/keystore')
+            storePassword 'chien777'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "org.oldservant.greekinterlinear"
+        minSdkVersion 21
+        targetSdkVersion 26
+    }
+    buildTypes {
+        GreekXLink {
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
+    }
+    productFlavors {
+    }
+}
+
